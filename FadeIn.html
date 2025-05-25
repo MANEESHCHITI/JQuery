@@ -1,0 +1,48 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#div1").fadeIn();
+                    $("#div2").fadeIn("slow");
+                    $("#div3").fadeIn(2000);          
+                    $("#div4").fadeIn("fast");
+                });
+            });
+    </script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border:2px solid yellow;
+            display:none;
+        }
+        #div1{
+            background-color:green ;
+        }
+        #div2{
+            background-color:rgb(26, 0, 128) ;
+        }
+        #div3{
+            background-color:rgb(21, 20, 19) ;
+        }
+        #div4{
+            background-color:#d68630 ;
+        }
+    </style>
+   </head>
+   <body>
+        <h1>hi this is fade in effect</h1>
+        <button>Press Here</button>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        
+        <!-- after dollar($)everything is in double quotes remember it. -->
+   </body>
+</html>
+

@@ -1,0 +1,33 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("h1").nextUntil("ol").css({"color":"green","font-size":"25px","border":"2px solid red"})
+        });
+    </script>
+    <style>
+        .siblings{
+            display:block;
+            color:blue;
+            border:2px solid rgb(204, 255, 0);
+            padding:10px;
+            margin:10px;
+        }
+    </style>
+   </head>
+   <body>
+    <div class="siblings">
+        <h1>maneesh</h1>
+        <p>maneesha</p>
+        <ol> ol
+            <li>li</li>
+            <li>li</li>
+        </ol>
+    </div>
+
+   </body>
+</html>
+

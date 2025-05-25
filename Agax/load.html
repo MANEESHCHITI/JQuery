@@ -1,0 +1,51 @@
+<html>
+    <head>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    // $("#load1").load("loadsup1.txt");
+
+                    // $("#load1").load("loadsup1.html  p");
+
+                    // $("#load1").load("loadsup1.html  #p1");
+
+                    // $("#load1").load("loadsup1.html",function(){
+                    //     alert("Loaded succesfully");
+                    // });
+
+                    $("#load1").load("loadsup1.html",function(responseTxt,statusTxt,xhr){
+                        //above rsponseTxt can be taken other name and other too same
+                        alert("Loaded succesfully");
+                        alert(responseTxt);
+                        alert(statusTxt);
+                        alert(xhr);
+                    });
+
+                    
+                    $("#load1").load("loadsup1.html",function(r,s,x){
+                        //above rsponseTxt can be taken other name and other too same
+                        alert("Loaded succesfully");
+                        alert(r);
+                        alert(s);
+                        alert(x);
+                    });
+
+                    // $("#load1").load("oadsup1.html",function(responseTxt,statusTxt,xhr){
+                    //     alert("Loaded succesfully");
+                    //     alert(responseTxt);
+                    //     alert(statusTxt);
+                    //     alert(xhr);
+                    // });
+                   
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1 id="load1">Maneesh</h1>
+        <h1>chintu</h1>
+        <button>click me</button>
+    </body>
+</html>

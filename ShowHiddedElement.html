@@ -1,0 +1,25 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".hideme").click(function(){
+                $("p").hide();
+            });
+            $(".showme").click(function(){
+                $("p").show();
+            });
+        });
+
+    </script> 
+   </head>
+   <body>
+        <h1 >welcome</h1>
+        <h1 class="hideme">hide me</h1>
+        <h1 class="showme">show me</h1>
+        <p>this is paragraph content</p>
+   </body>
+</html>
+

@@ -1,0 +1,46 @@
+<html>
+   <head>
+
+    <!-- here we shifting to the left with width, height and background -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").animate({
+                left:'200px',
+                height:'100px',
+                width:'100px',
+                fontsize:'15px'
+
+                });
+            });
+            
+        });
+          
+
+      
+    </script>
+    <style>
+  div{
+    height:200px;
+    width:200px;
+    background-color: green;
+    border:5px solid blue;
+    position:absolute;
+    text-align: center;
+    font-size: small;
+
+  }
+  /* #div1{
+    height:50px;
+    width:50px;
+  } */
+    </style>
+   </head>
+   <body>
+        <button> click on me</button>
+        <div id="div1"> this is a box</div>
+   </body>
+</html>
+

@@ -1,0 +1,38 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt="";
+                txt+="outer Width="+$(".demo1").outerWidth()     //including padding,border
+                $(".demo1").html(txt);
+            })
+
+        });
+    </script>
+    <style>
+        button{
+            background-color:rgb(70, 121, 184);
+            color:white;
+        }
+        .demo1{
+            height:120px;
+            width:200px;
+            background-color:rgb(229, 218, 218);
+            color:hsl(135, 79%, 48%);
+            border:5px solid green;
+            padding:10px;
+            margin:10px;
+            text-align:center;
+        }
+    </style>
+   </head>
+   <body>
+    <p class="demo1"> </p>
+    <button> click me</button>
+   </body>
+</html>
+

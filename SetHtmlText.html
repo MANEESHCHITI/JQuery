@@ -1,0 +1,38 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#para").text("this is the text format")
+            });
+            $("#btn2").click(function(){
+                $("#para").html("this is the <strong>html</strong> format")
+            });
+        });
+    </script>
+    <style>
+        button{
+            background-color:rgb(14, 16, 14);
+            color:white;
+            padding:10px;
+            margin:10px;
+        }
+        P{
+            background-color:#0bde0b;
+            color:rgb(218, 19, 19);
+            padding:10px;
+            margin:10px;  
+        }
+    </style>
+   </head>
+   <body>
+    <p id="para">this is the code which is overides</p>
+
+    <button id="btn1">Text</button>
+    <button id="btn2">Html</button>
+   </body>
+</html>
+

@@ -1,0 +1,49 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                var firstname1=$("#fn1").val();
+                var lastname1=$("#ln1").val();
+            
+                if(firstname1==""||lastname1==""){
+                    alert("all fields must be enter")
+                }
+                else{
+                        alert("entered else");
+                        $.get("GetSup1.php",
+                    {
+                        firstname2:firstname1,
+                        lastname2:lastname1
+                    },function(responseTxt,statusTxt,xhr){
+
+                        $("#h11").text(responseTxt);
+                         alert(responseTxt);
+                        // alert(statusTxt);
+                        // alert(xhr);
+
+                    }
+                     
+                );
+                }
+
+            })
+
+        });
+    </script>
+   </head>
+   <body>
+    <form action="" id="form1">
+        <input type="text" name="firstname" id="fn1" placeholder="firstname">
+        <input type="text" name="lastname" id="ln1" placeholder="lastname">
+        <h1 id="h11"></h1>
+        <input type="button" value="click me" id="btn1">
+    </form>
+
+
+   </body>
+</html>
+

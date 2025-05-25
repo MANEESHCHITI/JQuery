@@ -1,0 +1,39 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#empName").val("maneesh")
+            });
+            $("#btn2").click(function(){
+                $("#deptName").val("google")
+            });
+            $("#btn3").click(function(){
+                $("#emploc").val("hyd")
+            });
+        });
+    </script>
+    <style>
+        button{
+            color:white;
+            background-color:black;
+            font-size: 10px;
+            padding:10px;
+            margin:10px;
+        }
+
+    </style>
+   </head>
+   <body>
+    <p>EmpName<input type="text" id="empName" ></p>
+    <p>DeptName<input type="text" id="deptName" ></p>
+    <p>Emploc<input type="text" id="emploc" ></p>
+    <button id="btn1">set EmpName</button>
+    <button id="btn2">set DeptName</button>
+    <button id="btn3">set Emploc</button>
+   </body>
+</html>
+

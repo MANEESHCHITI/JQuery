@@ -1,0 +1,49 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#div1").fadeOut();
+                    $("#div2").fadeOut("slow");
+                    $("#div3").fadeOut(2000);          
+                    $("#div4").fadeOut("fast");
+                });
+            });
+    </script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border:2px solid yellow;
+            
+        }
+        #div1{
+            background-color:green ;
+        }
+        #div2{
+            background-color:rgb(26, 0, 128) ;
+        }
+        #div3{
+            background-color:rgb(21, 20, 19) ;
+        }
+        #div4{
+            background-color:#d68630 ;
+        }
+    </style>
+   </head>
+   <body>
+        <h1>hi this is fade out effect</h1>
+        <!-- keep this downlword will see upward animate -->
+        <button>Press Here</button>                                    
+        <div id="div1"></div> 
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        
+        <!-- after dollar($)everything is in double quotes remember it. -->
+   </body>
+</html>
+

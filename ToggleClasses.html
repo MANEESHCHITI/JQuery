@@ -1,0 +1,37 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,h3").toggleClass("demo1")
+                                            <!-- toggleclass -->
+            })
+
+        });
+    </script>
+    <style>
+        .demo1{
+            background-color:rgb(18, 230, 127);
+            color:white;
+        }
+        .demo2{
+            border:5px dashed rgb(193, 62, 62);
+            text-align:center
+        }
+    </style>
+   </head>
+   <body>
+        <h1 class="demo1">first heading</h1>
+        <p>this is the first paragraph</p>
+        <h2 class="demo1">second heading</h2>
+        <p>this is the second paragraph</p>
+        <h3 class="demo1"> third heading</h3>
+        <p>this is the third paragraph</p>
+        <button>click me</button>
+
+   </body>
+</html>
+

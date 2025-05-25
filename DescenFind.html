@@ -1,0 +1,39 @@
+<html></html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("div").find("li").css({"background-color":"skyblue "
+            , "color":"blue","border":"2px solid red"})
+        });
+    </script>
+    <style>
+        .descendant *{
+            display:block;
+            border:2px solid blue;
+            font-size:20px;  
+            padding: 10px;
+            margin:10px;
+        }
+    </style>
+   </head>
+   <body>
+        <div class="descendant">
+            <div style="width:500px"> div (great grandparent)
+                <ul> ul (grandparent) 
+                    <li> li (parent)
+                        <span>span</span>
+                        <span>span </span>
+                    </li>
+                    <li>li
+                    </li>
+                </ul>
+            </div>
+        </div>
+   </body>
+</html>
+
+
+<!-- here we are doing left side hierachy * represents all paired tags for apply ,parent method,css has inverted comma  -->

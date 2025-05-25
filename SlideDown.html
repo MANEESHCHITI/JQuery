@@ -1,0 +1,40 @@
+<html>
+   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#slide").click(function(){
+                $("#slidded").slideDown("fast")
+            });
+        });
+          
+
+      
+    </script>
+    <style>
+        #slide,#slidded{
+            padding:15px;
+            text-align: center;
+            font-size: 25px;
+            background-color: orange;
+            border:2px solid blue
+        }
+        #slidded{
+            padding:75px;
+            display:none;                            
+            font-size:35px;
+        }
+        /* display none is cruicial because if we not do it will default come down  */
+       
+
+
+    </style>
+   </head>
+   <body>
+       <div id="slide">click here to slide down</div>
+       <div id="slidded">This is slidded down</div>
+   </body>
+</html>
+
